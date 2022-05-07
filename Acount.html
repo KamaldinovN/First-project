@@ -40,10 +40,10 @@
             </div>
         </div>
     </div>
-
     <div id="content-form">
         <div class="container-form">
             <h2>Create Account</h2>
+
         </div>
         <form class="form" id="form">
             <div class="form-control">
@@ -66,7 +66,32 @@
                 <input type="password" placeholder="qwerty123" id="password2">
                 <small>Error message</small>
             </div>
-            <button>Submit</button>
+            <button id="submit">Submit</button>
+            <div class="sign">
+                <button id="sign-in" onclick="loadContent('content-form-login')">Or sign-in</button>
+            </div>
+
+        </form>
+    </div>
+    <div id="content-form-login">
+        <div class="container-form">
+            <h2>Login</h2>
+        </div>
+        <form class="form" id="form-login">
+            <div class="form-control">
+                <label>Username</label>
+                <input type="text" placeholder="ginger07" id="username-login">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label>Password</label>
+                <input type="password" placeholder="qwerty123" id="password-login">
+                <small>Error message</small>
+            </div>
+            <button id="login">Submit</button>
+            <div class="sign-up">
+                <button id="sign-up" onclick="loadContent('content-form')">Create account</button>
+            </div>
         </form>
     </div>
 <script src="jsform.js"></script>
