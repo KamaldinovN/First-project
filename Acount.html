@@ -43,7 +43,6 @@
     <div id="content-form">
         <div class="container-form">
             <h2>Create Account</h2>
-
         </div>
         <form class="form" id="form">
             <div class="form-control">
@@ -70,7 +69,6 @@
             <div class="sign">
                 <button id="sign-in" onclick="loadContent('content-form-login')">Or sign-in</button>
             </div>
-
         </form>
     </div>
     <div id="content-form-login">
@@ -88,12 +86,53 @@
                 <input type="password" placeholder="qwerty123" id="password-login">
                 <small>Error message</small>
             </div>
-            <button id="login">Submit</button>
+            <button id="login">Log-in</button>
             <div class="sign-up">
                 <button id="sign-up" onclick="loadContent('content-form')">Create account</button>
             </div>
         </form>
     </div>
+
+    <div class="content-account">
+        <div id="content-account">
+            <div class="container-form">
+                <h2> It`s your account</h2>
+                <h3> You can change your information </h3>
+            </div>
+            <fieldset>
+                <legend>Select your sex:</legend>
+
+                <div>
+                    <input type="radio" id="male" name="sex" value="male"
+                           checked>
+                    <label for="male">Male</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="female" name="sex" value="female">
+                    <label for="female">Female</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="Without" name="sex" value="none">
+                    <label for="Without">Without choose</label>
+                </div>
+            </fieldset>
+            <div class="form-control">
+                <fieldset>
+                    <legend>Change password</legend>
+                    <label>Password</label>
+                    <input type="password" placeholder="Your password" id="password-change">
+                    <small>Error message</small>
+                    <input type="password" placeholder="New password" id="password-new">
+                    <button class="Changepswd">Change</button>
+                </fieldset>
+
+            </div>
+        </div>
+
+    </div>
+
 <script src="jsform.js"></script>
 
     <footer id="footer">

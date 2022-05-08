@@ -248,9 +248,11 @@ body{
   }
 }
 
+.content-account{
+  flex: 1 0 auto;
+}
 
-
-#content-form, #content-form-login{
+#content-form, #content-form-login, #content-account{
   flex: 1 0 auto;
   margin: 10px auto 10px auto;
   border-radius: 5px;
@@ -258,6 +260,10 @@ body{
   max-width: 60%;
 
 }
+#content-account{
+  display: none;
+}
+
 .container-form{
   background-color: #f7f7f7;
   border-bottom: 1px solid #f0f0f0;
@@ -319,7 +325,7 @@ body{
   visibility: visible;
 }
 
-.form button, .sign-in{
+.form button, .sign-in, .Changepswd{
   background-color: #949AA2;
   border: 2px solid #949AA2;
   border-radius: 4px;
@@ -337,6 +343,9 @@ body{
   background-color: #808284;
 }
 .sign-in:hover{
+  background-color: #808284;
+}
+.Changepswd:hover {
   background-color: #808284;
 }
 #content-form-login{
