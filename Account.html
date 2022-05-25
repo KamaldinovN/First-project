@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>Apple products</title>
+    <title>Personal account</title>
     <link rel="apple-touch-icon" sizes="180x180" href="pfoto/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="pfoto/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="pfoto/favicon-16x16.png">
@@ -16,13 +16,13 @@
     <div id="header">
         <div class="container-header">
             <div class="image_logo">
-                <img src="pfoto/applelogo.png" width="30" height="30"></div>
+                <a href="product.html"> <img src="pfoto/applelogo.png"  alt="photo" width="30" height="30"></a></div>
             <nav class="menu">
                 <a href="product.html" class="main-item">Product</a>
                 <a href="iphone.html" class="main-item">iPhone</a>
                 <a href="Macbook.html" class="main-item">MacBook</a>
                 <a href="ipad.html" class="main-item">iPad</a>
-                <a href="#" class="main-item active">Account</a>
+                <a href="#" class="main-item logo"> <img src="pfoto/ico.png"> </a>
             </nav>
             <div class="hamburger-menu">
                 <input id="menu__toggle" type="checkbox" />
@@ -35,64 +35,12 @@
                     <li><a class="menu__item" href="iphone.html">iPhone</a></li>
                     <li><a class="menu__item" href="Macbook.html">Macbook</a></li>
                     <li><a class="menu__item" href="ipad.html">iPad</a></li>
-                    <li><a class="menu__item" href="Acount.html">Account</a></li>
+                    <li><a class="menu__item" href="Account.html">Account</a></li>
                 </ul>
             </div>
-        </div>
-    </div>
-    <div id="content-form">
-        <div class="container-form">
-            <h2>Create Account</h2>
-        </div>
-        <form class="form" id="form">
-            <div class="form-control">
-                <label>Username</label>
-                <input type="text" placeholder="ginger07" id="username">
-                <small>Error message</small>
-            </div>
-            <div class="form-control">
-                <label>Email</label>
-                <input type="email" placeholder="n.kama@gmail.com" id="email">
-                <small>Error message</small>
-            </div>
-            <div class="form-control">
-                <label>Password</label>
-                <input type="password" placeholder="qwerty123" id="password">
-                <small>Error message</small>
-            </div>
-            <div class="form-control">
-                <label>Re-type password</label>
-                <input type="password" placeholder="qwerty123" id="password2">
-                <small>Error message</small>
-            </div>
-            <button id="submit">Submit</button>
-            <div class="sign">
-                <button id="sign-in" onclick="loadContent('content-form-login')">Or sign-in</button>
-            </div>
-        </form>
-    </div>
-    <div id="content-form-login">
-        <div class="container-form">
-            <h2>Login</h2>
-        </div>
-        <form class="form" id="form-login">
-            <div class="form-control">
-                <label>Username</label>
-                <input type="text" placeholder="ginger07" id="username-login">
-                <small>Error message</small>
-            </div>
-            <div class="form-control">
-                <label>Password</label>
-                <input type="password" placeholder="qwerty123" id="password-login">
-                <small>Error message</small>
-            </div>
-            <button id="login">Log-in</button>
-            <div class="sign-up">
-                <button id="sign-up" onclick="loadContent('content-form')">Create account</button>
-            </div>
-        </form>
-    </div>
 
+    </div>
+</div>
     <div class="content-account">
         <div id="content-account">
             <div class="container-form">
@@ -116,6 +64,7 @@
                 <div>
                     <input type="radio" id="Without" name="sex" value="none">
                     <label for="Without">Without choose</label>
+                    <button class="saveinfo">Save</button>
                 </div>
             </fieldset>
             <div class="form-control">
@@ -125,15 +74,15 @@
                     <input type="password" placeholder="Your password" id="password-change">
                     <small>Error message</small>
                     <input type="password" placeholder="New password" id="password-new">
-                    <button class="Changepswd">Change</button>
+                    <button id="Changepswd" class="Changepswd">Change</button>
                 </fieldset>
-
+        <script src="account%20js.js"></script>
             </div>
         </div>
 
     </div>
 
-<script src="jsform.js"></script>
+
 
     <footer id="footer">
     <div class="container-footer">

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>Apple products</title>
+    <title>iPhone</title>
     <link rel="apple-touch-icon" sizes="180x180" href="pfoto/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="pfoto/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="pfoto/favicon-16x16.png">
@@ -13,17 +13,17 @@
     <script src="less@4.js"></script>
 </head>
 
-<body>
+<body class="sc">
     <div id="header">
         <div class="container-header">
             <div class="image_logo">
-                <img src="pfoto/applelogo.png" width="30" height="30"></div>
+                <a href="product.html"> <img src="pfoto/applelogo.png"  alt="photo" width="30" height="30"></a></div>
             <nav class="menu">
                 <a href="product.html" class="main-item">Product</a>
                 <a href="#" class="main-item active">iPhone</a>
                 <a href="Macbook.html" class="main-item">MacBook</a>
                 <a href="ipad.html" class="main-item">iPad</a>
-                <a href="Acount.html" class="main-item">Account</a>
+                <a href="#popup" class="main-item logo" onclick="lockScroll()"><img src="pfoto/ico.png"></a>
             </nav>
             <div class="hamburger-menu">
                 <input id="menu__toggle" type="checkbox" />
@@ -36,12 +36,71 @@
                     <li><a class="menu__item" href="#">iPhone</a></li>
                     <li><a class="menu__item" href="Macbook.html">Macbook</a></li>
                     <li><a class="menu__item" href="ipad.html">iPad</a></li>
-                    <li><a class="menu__item" href="Acount.html">Account</a></li>
+                    <li><a class="menu__item" href="#popup" onclick="lockScroll()">Account</a></li>
                 </ul>
             </div>
         </div>
+        <div id ="popup" class="popup">
+            <div class ="popup__body">
+                <div class="popup__content">
+                    <a href="#" class="popup_close close-popup" onclick="unlockScroll()">&times;</a>
+                    <div class="popup__title">Login</div>
+                    <div class="popup__content">
+                        <form class="form" id="form-login">
+                            <div class="form-control">
+                                <label>Username</label>
+                                <input type="text" placeholder="ginger07" id="username-login">
+                                <small>Error message</small>
+                            </div>
+                            <div class="form-control">
+                                <label>Password</label>
+                                <input type="password" placeholder="qwerty123" id="password-login">
+                                <small>Error message</small>
+                            </div>
+                            <button id="login">Log-in</button>
+                            <div class="link"> <a href="#popup2" class="link">Regestration</a></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id ="popup2" class="popup">
+            <div class ="popup__body">
+                <div class="popup__content">
+                    <a href="#" class="popup_close" onclick="unlockScroll()">&times;</a>
+                    <div class="popup__title" >Creating account</div>
+                    <div class="popup__content">
+                        <form class="form" id="form">
+                            <div class="form-control">
+                                <label>Username</label>
+                                <input type="text" placeholder="ginger07" id="username">
+                                <small>Error message</small>
+                            </div>
+                            <div class="form-control">
+                                <label>Email</label>
+                                <input type="email" placeholder="n.kama@gmail.com" id="email">
+                                <small>Error message</small>
+                            </div>
+                            <div class="form-control">
+                                <label>Password</label>
+                                <input type="password" placeholder="qwerty123" id="password">
+                                <small>Error message</small>
+                            </div>
+                            <div class="form-control">
+                                <label>Re-type password</label>
+                                <input type="password" placeholder="qwerty123" id="password2">
+                                <small>Error message</small>
+                            </div>
+                            <button id="submit">Create</button>
+                            <div class="link"><a href="#popup" class="link">Sign-in</a></div>
+                        </form>
+                        <script src="jsform.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
+    <script src="modal.js"></script>
     <div id="content-iphone">
         <div class="text-iphone">
             Available iPhone
@@ -54,7 +113,7 @@
     <div class="content">
         <div class="img">
             <div>
-                <img class="img-photo" src="pfoto/13.jpg" width="250" height="250">
+                <img class="img-photo" src="pfoto/13.png" width="250" height="325">
             </div>
             </div>
         <div class="info-iphone">
@@ -68,7 +127,7 @@
     <div class="content">
     <div class="img">
         <div>
-            <img class="img-photo" src="pfoto/13pro.jpg" width="200" height="250">
+            <img class="img-photo" src="pfoto/13pro.png" width="250" height="325">
         </div>
     </div>
     <div class="info-iphone">
@@ -81,7 +140,7 @@
     <div class="content">
     <div class="img">
         <div>
-            <img class="img-photo" src="pfoto/13promax.jpg" width="250" height="250">
+            <img class="img-photo" src="pfoto/13promax.png" width="250" height="325">
         </div>
     </div>
     <div class="info-iphone">
